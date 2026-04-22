@@ -123,9 +123,6 @@ function handleSignup(event)
 	{
 		successMessage.style.display = "block";
 	}
-	setTimeout(function () {
-		window.location.href = "login_user.html";
-	}, 2000);
 	return false;
 }
 </script>
@@ -203,7 +200,7 @@ function handleSignup(event)
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">New User</h5>
                         <h1 class="text-white mb-4">Sign Up</h1>
 						<span id="signup-success" style="color:#009900; display:none;">Registered Success..</span>
-                        <form name="form1" method="get" action="login_user.html" onsubmit="return handleSignup(event)">
+                        <form name="form1" action="#" onsubmit="return handleSignup(event)">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">

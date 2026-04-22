@@ -110,6 +110,24 @@ function validate()
 	}
 return true;
 }
+
+function handleSignup(event)
+{
+	if(!validate())
+	{
+		return false;
+	}
+	event.preventDefault();
+	var successMessage = document.getElementById("signup-success");
+	if(successMessage)
+	{
+		successMessage.style.display = "block";
+	}
+	setTimeout(function () {
+		window.location.href = "login_user.html";
+	}, 2000);
+	return false;
+}
 </script>
 
 </head>
@@ -184,20 +202,8 @@ return true;
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">New User</h5>
                         <h1 class="text-white mb-4">Sign Up</h1>
-						{% if msg=="success" %}
-						<span style="color:#009900">Registered Success..</span>
-						<script>
-//Using setTimeout to execute a function after 5 seconds.
-setTimeout(function () {
-   //Redirect with JavaScript
-   window.location.href= 'login_user.html';
-}, 2000);
-</script>
-						{% endif %}
-						{% if msg=="fail" %}
-						<span style="color:#FF0000">User Already exist!</span>
-						{% endif %}
-                        <form name="form1" method="post">
+						<span id="signup-success" style="color:#009900; display:none;">Registered Success..</span>
+                        <form name="form1" method="get" action="login_user.html" onsubmit="return handleSignup(event)">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -248,7 +254,7 @@ setTimeout(function () {
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit" onClick="return validate()">Sign Up</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Sign Up</button>
                                 </div>
                             </div>
                         </form>

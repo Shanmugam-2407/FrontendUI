@@ -7,7 +7,7 @@
   <title>Delivery Share</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../static/web/vendors/feather/feather.css">
-  <link rel="stylesheet" href="../../static/web/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../static/web/vendors/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../static/web/vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
@@ -15,7 +15,7 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="../../static/web/css/vertical-layout-light/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="../../static/web/images/favicon.png" />
+  <link rel="shortcut icon" href="../../static/web/images/faviconfsdf.png" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
  <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTTLwe4kE3moddbho_mPNzM9uVctu7hr4&callback=initMap&v=weekly"
@@ -172,7 +172,7 @@ window.initMap = initMap;
                 <i class="ti-settings text-primary"></i>
                 Settings
               </a>-->
-              <a class="dropdown-item" href="/logout">
+              <a class="dropdown-item" href="../../index.html">
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
@@ -216,44 +216,44 @@ window.initMap = initMap;
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="/admin">
+            <a class="nav-link" href="admin.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
 		   <li class="nav-item">
-            <a class="nav-link" href="/add_cat">
+            <a class="nav-link" href="add_cat.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Category</span>
             </a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="/add_food">
+            <a class="nav-link" href="add_food.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Food</span>
             </a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="/add_person">
+            <a class="nav-link" href="add_person.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Delivery Person</span>
             </a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="/view_order">
+            <a class="nav-link" href="view_order.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Oders</span>
             </a>
           </li>
 		  <!--<li class="nav-item">
-            <a class="nav-link" href="/view_deliver">
+            <a class="nav-link" href="view_share.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Delivered</span>
             </a>
           </li>-->
 		 
 		 <li class="nav-item">
-            <a class="nav-link" href="/view_feed">
+            <a class="nav-link" href="view_feed.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Feedback</span>
             </a>
@@ -261,7 +261,7 @@ window.initMap = initMap;
 		  
         
           <li class="nav-item">
-            <a class="nav-link" href="/logout">
+            <a class="nav-link" href="../../index.html">
               <i class="icon-paper menu-icon"></i>
               <span class="menu-title">Logout</span>
             </a>
@@ -394,7 +394,7 @@ setTimeout(function () {
 							<td>{{rs[2]}}</td>
 							<td>{{rs[3]}}</td>
 							<td>{{rs[4]}} {{rs[5]}}</td>
-							<td><a href="/add_person?act=del&did={{rs[0]}}">Delete</a></td>
+							<td><a href="add_person.html?act=del&did={{rs[0]}}">Delete</a></td>
 						</tr>
 						{% endfor %}
 						

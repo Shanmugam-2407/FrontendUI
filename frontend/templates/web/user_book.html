@@ -7,7 +7,7 @@
   <title>Delivery Share</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../static/web/vendors/feather/feather.css">
-  <link rel="stylesheet" href="../../static/web/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../static/web/vendors/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../static/web/vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
@@ -15,7 +15,7 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="../../static/web/css/vertical-layout-light/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="../../static/web/images/favicon.png" />
+  <link rel="shortcut icon" href="../../static/web/images/faviconfsdf.png" />
   <style>
         body {
             font-family: 'Segoe UI', sans-serif;
@@ -211,7 +211,7 @@
                 <i class="ti-settings text-primary"></i>
                 Settings
               </a>-->
-              <a class="dropdown-item" href="/logout">
+              <a class="dropdown-item" href="../../index.html">
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
@@ -255,26 +255,26 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="/userhome">
+            <a class="nav-link" href="userhome.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="/user_book" style="background-color:#FF9900; color:#FFFFFF">
+            <a class="nav-link" href="user_book.html" style="background-color:#FF9900; color:#FFFFFF">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Booking</span>
             </a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="/user_order">
+            <a class="nav-link" href="user_order.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Orders</span>
             </a>
           </li>
 		 
 		 <li class="nav-item">
-            <a class="nav-link" href="/add_feed">
+            <a class="nav-link" href="add_feed.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Feedback</span>
             </a>
@@ -282,7 +282,7 @@
 		  
         
           <li class="nav-item">
-            <a class="nav-link" href="/logout">
+            <a class="nav-link" href="../../index.html">
               <i class="icon-paper menu-icon"></i>
               <span class="menu-title">Logout</span>
             </a>
@@ -326,7 +326,7 @@
 
           <p class="price">&#8377; {{row[3]}}</p>
 
-          <a href="/user_book?act=book&fid={{row[0]}}" class="btn-order">
+          <a href="book_food.html?act=book&fid={{row[0]}}" class="btn-order">
             Book Now
           </a>
         </div>
